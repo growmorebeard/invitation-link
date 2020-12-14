@@ -22,7 +22,7 @@
         <section>
             <div>
                 <label for="Student">Student</label>
-                <input type="image" src="add.png" alt="submit" id="myBtn2" >
+                <input type="image" src="add.png" alt="submit" id="myBtn1" >
                 <div class="hl"></div>
             </div>
             
@@ -32,7 +32,7 @@
             <div class="modal-content">
                 <span class="close">&times;</span>
                 <div>
-                    <label for="invite" class="Invite">Invite Teacher</label>
+                    <label for="invite" class="Invite" id="invite">Invite Teacher</label>
                 </div>
                     <div class="hl"></div>
                 <br>
@@ -54,13 +54,15 @@
         <script>
             var modal = document.getElementById("myModal");
             var btn = document.getElementById("myBtn");
-            var btn2 = document.getElementById("myBtn2");
+            var btn1 = document.getElementById("myBtn1");
             var span = document.getElementsByClassName("close")[0];
             btn.onclick = function () {
                 modal.style.display = "block";
+                document.getElementById("invite").innerHTML="Invite Teacher";
             }
-            btn2.onclick = function () {
+            btn1.onclick = function () {
                 modal.style.display = "block";
+                document.getElementById("invite").innerHTML="Invite Student";
             }
             span.onclick = function () {
                 modal.style.display = "none";
