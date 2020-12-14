@@ -22,30 +22,30 @@
         <section>
             <div>
                 <label for="Student">Student</label>
-                <input type="image" src="add.png" alt="submit" >
+                <input type="image" src="add.png" alt="submit" id="myBtn2" >
                 <div class="hl"></div>
             </div>
             
         </section>
 
-    <div id="myModal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <div>
-                <label for="invite" class="Invite">Invite Teacher</label>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div>
+                    <label for="invite" class="Invite">Invite Teacher</label>
+                </div>
+                    <div class="hl"></div>
+                <br>
+                <br>
+                <div>
+                    <label for="Email" class="email">Enter email: </label>
+                    <input type="textfield" class="textfield">
+                </div>
+                <div class="btn-div">
+                    <button class="btn btn-primary">Cancel</button>
+                    <button class="btn btn-primary">Add</button>
+                </div>
             </div>
-                <div class="hl"></div>
-            <br>
-            <br>
-            <div>
-                <label for="Email" class="email">Enter email: </label>
-                <input type="textfield" class="textfield">
-            </div>
-            <div class="btn-div">
-                <button class="btn btn-primary">Cancel</button>
-                <button class="btn btn-primary">Add</button>
-            </div>
-        </div>
      
     </div>
 
@@ -54,8 +54,12 @@
         <script>
             var modal = document.getElementById("myModal");
             var btn = document.getElementById("myBtn");
+            var btn2 = document.getElementById("myBtn2");
             var span = document.getElementsByClassName("close")[0];
             btn.onclick = function () {
+                modal.style.display = "block";
+            }
+            btn2.onclick = function () {
                 modal.style.display = "block";
             }
             span.onclick = function () {
@@ -66,6 +70,7 @@
                     modal.style.display = "none";
                 }
             }
+            
         </script>
 </body>
 
