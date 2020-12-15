@@ -97,6 +97,12 @@ input{
   background-color: #c0e7f8;
   border-color: #c0e7f8;
 }
+
+#copy:hover{
+  background-color: #93dbf8;
+  border-color: #93dbf8;
+}
+
 .btn-div{
   margin-top: 8px;
   display: flex;
@@ -104,16 +110,17 @@ input{
   align-items: flex-end;
 }
 .btn{
-  border-radius: 10px;
+  border-radius: 7px;
   margin-top: 100px;
   margin-right: 20px;
 }
 .btn-primary {
   background-color: #c0e7f8;
   border-color: #c0e7f8;
-  font-size: 20px;
+  font-size: 15px;
   width: 75px;
   height: 30px;
+  
 }
 .btn-primary:hover {
   background-color: #93dbf8;
