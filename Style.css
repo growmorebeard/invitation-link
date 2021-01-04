@@ -37,6 +37,10 @@ input{
   border: 1px solid white;
 }
 
+.code{
+  font-size: 5px;
+}
+
 .Invite{
   font-size: 50px;
 }
@@ -44,8 +48,8 @@ input{
   font-size: 15px;
 }
 
-.code{
-  font-size: 15px;
+#code{
+  font-size: 20px;
 }
 
 .invitation-link{
